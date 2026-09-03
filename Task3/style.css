@@ -1,0 +1,40 @@
+body {
+    background-color: blanchedalmond;
+}
+
+.head{
+    color: darkblue;
+}
+#bglime{
+    background-color: lime;
+}
+
+.red-word {
+    color: red;
+}
+
+p{
+    font-style: italic;
+    color: orange;
+}
+
+#para{
+    color: green;
+}
+
+.black{
+    color: black;
+    font-size: 25px;
+}
+
+a{
+    background-color: yellow;
+}
+
+ol li:nth-child(2){
+    color: blue;
+}
+
+ol li:nth-child(3){
+    color: red;
+}
