@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+
+        <img class="logo" src="logo.webp" alt="Logo">
+
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="login">
+            <span>Username</span>
+            <button id="logout">Logout</button>
+        </div>
+
+    </nav>
+
+    <div class="main-container">
+
+        <div class="left-container">
+
+            <h3>Added Items</h3>
+
+            <div class="item-heading">
+                <span>S.No</span>
+                <span>Service Name</span>
+                <span>Price</span>
+            </div>
+
+            <div id="item-list"></div>
+
+            <div id="empty-message">
+                <div class="info-icon">ⓘ</div>
+                <p>No Items Added</p>
+                <small>Add items to the cart from the right section</small>
+            </div>
+
+            <div class="total">
+                <h4>Total Amount</h4>
+                <h4 id="total-amount">₹0</h4>
+            </div>
+
+            <div class="booking-section">
+
+                <h3>Book Now</h3>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" id="full-name" placeholder="John Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email ID</label>
+                        <input type="email" id="email" placeholder="john@gmail.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="text" id="phone" placeholder="9876543210">
+                    </div>
+                </div>
+
+                <button id="book-btn">Book Now</button>
+
+                <p id="booking-message">
+                    ⓘ Add the items to the cart to book
+                </p>
+                <p id="success-message"></p>
+
+            </div>
+
+        </div>
+
+        <div class="right-container">
+
+            <h3>Browse Our Services</h3>
+
+            <p class="description">
+                Click on the add to cart button to add the services to your
+                cart or press skip.
+            </p>
+
+            <div class="services">
+
+                <div class="service-card">
+                    <img src="dry-cleaning.webp" alt="Dry Cleaning">
+
+                    <div class="service-info">
+                        <h4>Dry Cleaning</h4>
+                        <h4>₹200.00</h4>
+                    </div>
+
+                    <div class="service-buttons">
+                        <button class="skip-btn">Skip Item</button>
+                        <button class="add-btn" data-name="Dry Cleaning" data-price="200">
+                            Add Item
+                        </button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="washing.webp" alt="Washing">
+
+                    <div class="service-info">
+                        <h4>Washing</h4>
+                        <h4>₹100.00</h4>
+                    </div>
+
+                    <div class="service-buttons">
+                        <button class="skip-btn">Skip Item</button>
+                        <button class="add-btn" data-name="Washing" data-price="100">
+                            Add Item
+                        </button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="stain-removal.webp" alt="Stain Removal">
+
+                    <div class="service-info">
+                        <h4>Stain Removal</h4>
+                        <h4>₹500.00</h4>
+                    </div>
+
+                    <div class="service-buttons">
+                        <button class="skip-btn">Skip Item</button>
+                        <button class="add-btn" data-name="Stain Removal" data-price="500">
+                            Add Item
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="right-message">
+                ⓘ Add the items to the cart and book now
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
