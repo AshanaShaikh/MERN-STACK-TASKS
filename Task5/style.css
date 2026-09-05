@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #24415d;
+}
+
+.navbar {
+    width: 90%;
+    margin: 25px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 15px;
+}
+
+.username {
+    border: none;
+    background-color: #eaf7fb;
+    color: #168bb3;
+    padding: 14px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.hero {
+    width: 80%;
+    min-height: 75vh;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.4;
+    color: #24415d;
+}
+
+.hero-text h1 span {
+    color: #1298d4;
+}
+
+.hero-text p {
+    max-width: 570px;
+    margin-top: 20px;
+    color: #8b969e;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.book-button {
+    margin-top: 30px;
+    padding: 18px 45px;
+    border: none;
+    border-radius: 18px;
+    background-color: #159bd7;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero-image {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+}
