@@ -45,6 +45,7 @@ nav h2 {
     display: flex;
     align-items: center;
     gap: 20px;
+    position: relative;
 }
 
 .user-menu span {
@@ -114,52 +115,28 @@ nav h2 {
 }
 
 .mobile-menu {
-    position: fixed;
-    top: 0;
-    right: -320px;
+    position: absolute;
+    top: 60px;
+    right: 0;
     width: 280px;
     height: 100vh;
     background: black;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 28px;
-    transition: 0.3s;
     z-index: 10;
 }
 
-.mobile-menu.active {
-    right: 0;
+#menu-btn:focus + .mobile-menu {
+    display: flex;
 }
 
 .mobile-menu a {
     color: white;
     text-decoration: none;
     font-size: 20px;
-}
-
-#close-btn {
-    position: absolute;
-    top: 20px;
-    right: 25px;
-    border: none;
-    background: none;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
-}
-
-.overlay {
-    display: none;
-}
-
-.overlay.active {
-    display: block;
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.25);
-    z-index: 5;
 }
 
 @media (max-width: 768px) {
