@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart | THALA 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            THALA<span>7</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="display.html">Sneakers</a></li>
+            <li><a href="#new">New Arrivals</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+
+        <div class="nav-icons">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <a href="cart.html" class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>0</span>
+            </a>
+
+            <img
+                src="https://i.pravatar.cc/100"
+                alt="Profile Picture"
+                class="profile"
+            >
+        </div>
+    </nav>
+
+    <main class="cart-page">
+
+        <h1>Shopping Cart</h1>
+
+        <div class="cart-layout">
+
+        <!-- LEFT SIDE -->
+        <section class="cart-left">
+
+            <div class="cart-heading-row">
+                <span>Product</span>
+                <span>Quantity</span>
+                <span>Price</span>
+                <span></span>
+            </div>
+
+
+            <div class="cart-product">
+                <div class="cart-product-name">
+                    Seven By M.S.Dhoni Women's Running Shoes
+                </div>
+
+                <div class="quantity">
+                    <button type="button">−</button>
+                    <span>1</span>
+                    <button type="button">+</button>
+                </div>
+
+                <div class="product-price">₹ 8,499</div>
+
+                <button type="button" class="remove-product">×</button>
+            </div>
+
+
+            <div class="cart-product">
+                <div class="cart-product-name">
+                    Seven By M.S.Dhoni Multi Color Sneakers
+                </div>
+
+                <div class="quantity">
+                    <button type="button">−</button>
+                    <span>1</span>
+                    <button type="button">+</button>
+                </div>
+
+                <div class="product-price">₹ 8,499</div>
+
+                <button type="button" class="remove-product">×</button>
+            </div>
+
+
+            <div class="cart-product">
+                <div class="cart-product-name">
+                    Seven By M.S.Dhoni Premium Running Shoes
+                </div>
+
+                <div class="quantity">
+                    <button type="button">−</button>
+                    <span>1</span>
+                    <button type="button">+</button>
+                </div>
+
+                <div class="product-price">₹ 8,499</div>
+
+                <button type="button" class="remove-product">×</button>
+            </div>
+
+        </section>
+
+        <aside class="cart-summary">
+
+            <div class="coupon-section">
+
+                <label for="coupon">
+                    Enter Coupon Code
+                </label>
+
+                <div class="coupon-box">
+
+                    <input
+                        type="text"
+                        id="coupon"
+                        placeholder="Enter coupon"
+                    >
+
+                    <button type="button">
+                        Apply Coupon
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="bill-details">
+
+                <div class="bill-row">
+                    <span>Sub Total</span>
+                    <span>₹24,700</span>
+                </div>
+
+                <div class="bill-row">
+                    <span>Taxes (If applicable)</span>
+                    <span>₹199</span>
+                </div>
+
+                <div class="bill-row">
+                    <span>Discount</span>
+                    <span>₹0</span>
+                </div>
+
+                <div class="bill-row total">
+                    <span>Total</span>
+                    <span>₹24,899</span>
+                </div>
+
+            </div>
+
+
+            <button type="button" class="pay-now">
+                <a href="payment.html">Pay Now ₹24,899</a>
+            </button>
+
+
+            <div class="payment-methods">
+                <span class="secure">🔒 SECURE</span>
+                <span class="razorpay">Razorpay</span>
+                <span class="payment-lock">🔐</span>
+            </div>
+
+        </aside>
+
+    </div>
+
+
+    <a href="display.html" class="continue-shopping">
+        ← Continue Shopping
+    </a>
+
+</main>
+</body>
+</html>

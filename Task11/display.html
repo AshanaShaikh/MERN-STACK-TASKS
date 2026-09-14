@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Display</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            THALA<span>7</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Sneakers</a></li>
+            <li><a href="#">More</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <img
+                src="https://i.pravatar.cc/100"
+                alt="Profile"
+                class="profile"
+            >
+        </div>
+
+    </nav>
+
+
+    <main class="product-page">
+
+        <section class="product-section">
+
+            <div class="product-image">
+
+                <img
+                    id="main-image"
+                    src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+                    alt="Running Shoe"
+                >
+
+            </div>
+
+
+            <div class="product-details">
+
+                <p class="category">
+                    SNEAKERS / RUNNING SHOES
+                </p>
+
+                <h1>
+                    Thala 7 Premium
+                    Running Shoes
+                </h1>
+
+                <p class="description">
+                    Experience comfort, performance and everyday style
+                    with premium sneakers designed for smooth movement.
+                    Lightweight construction and a modern design make
+                    these shoes perfect for every step.
+                </p>
+
+
+                <div class="price-section">
+
+                    <h2>₹1,334</h2>
+
+                    <div>
+                        <span class="save">Save 12%</span>
+                        <p>Inclusive of all Taxes</p>
+                    </div>
+
+                </div>
+
+
+                <div class="buy-section">
+
+                    <div class="quantity">
+
+                        <button id="minus">−</button>
+
+                        <span id="quantity-value">1</span>
+
+                        <button id="plus">+</button>
+
+                    </div>
+
+
+                    <button class="cart-btn" id="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="cart.html">ADD TO CART</a>
+                    </button>
+
+                </div>
+
+                <p id="cart-message"></p>
+
+            </div>
+
+        </section>
+
+
+        <section class="gallery">
+
+            <div class="gallery-container">
+
+                <img
+                    src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+                    alt="Shoe View"
+                    class="active-image"
+                >
+
+                <img
+                    src="https://images.unsplash.com/photo-1552346154-21d32810aba3"
+                    alt="Shoe View"
+                >
+
+                <img
+                    src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519"
+                    alt="Shoe View"
+                >
+
+                <img
+                    src="https://images.unsplash.com/photo-1608231387042-66d1773070a5"
+                    alt="Shoe View"
+                >
+
+                <img
+                    src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb"
+                    alt="Shoe View"
+                >
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="display.js"></script>
+
+</body>
+</html>
