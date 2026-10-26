@@ -1,0 +1,140 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 750px;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 38px;
+    color: #222;
+    margin-bottom: 35px;
+    transition: color 0.3s ease;
+}
+
+.color-boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.color-box {
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.color-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.red {
+    background: #ffe0e0;
+    color: #c62828;
+}
+
+.blue {
+    background: #dceaff;
+    color: #174ea6;
+}
+
+.green {
+    background: #dcfce7;
+    color: #16723b;
+}
+
+.yellow {
+    background: #fff3bf;
+    color: #8a6500;
+}
+
+.greeting-form {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+input {
+    width: 65%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #3563e9;
+    box-shadow: 0 0 0 3px rgba(53, 99, 233, 0.12);
+}
+
+button {
+    padding: 14px 22px;
+    background: #3563e9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.25s ease;
+}
+
+button:hover {
+    background: #244bc0;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .color-boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .color-box {
+        height: 100px;
+    }
+
+    .greeting-form {
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+    }
+}
